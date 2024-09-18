@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Book A Room</title>
+        <link rel="stylesheet" href="assets/style.css">
+        <link rel="stylesheet" href="assets/book.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+        <link rel="icon" type="image/x-icon" href="favicon.ico">
+    </head>
+    <body>
+
+        <nav>
+            <a href="index.html" class="logo"><img src="img/logo.png" alt=""></a>
+            
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="rooms.html">Our Rooms</a></li>
+                <li><a href="facilities.html">Facilities</a></li>
+                <a href="book.html" class="reservation active"><span>Book Now</span></a>
+            </ul>
+
+            <div class="menu-toggle">
+                <input type="checkbox">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </nav>
+
+        <section>
+            <div class="form-box">
+                <div class="form-value">
+                    <form action="index.html">
+                        <h2>Booking</h2>
+                        <table>
+                            <tr>
+                                <td><label for="input-name">Name</label></td>
+                                <td><input type="text" name="" id="input-name"></td>
+                            </tr>
+                            <tr>
+                                <td><label for="input-email">E-mail</label></td>
+                                <td><input type="text" name="" id="input-email"></td>
+                            </tr>
+                            <tr>
+                                <td><label for="input-type">Room Types</label></td>
+                                <td>
+                                    <select name="" id="input-type">
+                                        <option value="">Select Room Type</option>
+                                        <option value="deluxe">Deluxe Room</option>
+                                        <option value="premier">Premier Room</option>
+                                        <option value="orchid">Orchid Suite</option>
+                                        <option value="sands">Sands Suite</option>
+                                        <option value="scbd">SCBD Suite</option>
+                                        <option value="presidential">Presidential Suite</option>
+                                        <option value="chairman">Chairman Suite</option>
+                                    </select>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td><label for="input-date-in">Check-in Date</label></td>
+                                <td><input type="date" name="" id="input-date-in"></td>
+                            </tr>
+                            <tr>
+                                <td><label for="input-date-out">Check-out Date</label></td>
+                                <td><input type="date" name="" id="input-date-out"></td>
+                            </tr>
+                            <tr>
+                                <td colspan="2">
+                                    <input type="checkbox" name="" id="input-agreement">
+                                    <label for="input-agreement">I Agree to the terms and conditions</label>
+                                </td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <td><button type="reset" class="form-button">Reset</button></td>
+                                <!-- <td><input type="submit" value="Submit" class="form-button" onclick="return validate()"></td> -->
+                                <td><button type="submit"class="form-button"  onclick="return validate()">Submit</button></td>
+                            </tr>
+                            <div class="error">
+                                <div id="name-error"></div>
+                                <div id="emails-error"></div>
+                                <div id="room-error"></div>
+                                <div id="date-in-error"></div>
+                                <div id="date-out-error"></div>
+                                <div id="agreement-error"></div>
+                                <div id="valid"></div>
+                            </div>
+                        </table>
+                    </form>
+                </div>
+            </div>
+        </section>
+
+        <footer>
+            <div class="footer-content">
+                <h2>VhoTel</h2>
+                <p>SCBD, Jakarta Selatan, Indonesia Tel: (62-21) 550 5555, (62-21) 454 5000 | Fax : (62-21) 978 9595 | Email: hello@vhotel.com</p>
+                
+            </div>
+            <div class="footer-bottom">
+                <p>copyright &copy;2023 VhoTel. designed by <span>Kent N</span></p>
+            </div>
+        </footer>
+
+        <script type="text/javascript" src="assets/book.js"></script>
+    </body>
+    </html>

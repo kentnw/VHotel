@@ -1,0 +1,70 @@
+.room-parents{
+    margin: 20px;
+}
+
+.room-images img{
+    width: 30vw;
+}
+
+.details{
+    margin: 5%;
+    list-style: none;
+}
+
+.details li::before{
+    content: "\2022";
+    color: #cdab54;
+
+}
+
+.room{
+    padding: 30px;
+    
+}
+ 
+.room .text{
+    text-align: center;
+}
+
+.room-parents{
+    display: grid;
+    grid-template-columns: auto auto auto;
+    row-gap: 100px;
+    column-gap: 20px;
+}
+
+.room-details{
+    border-left: 3px solid #cdab54;
+    padding-left: 10px;
+    padding-top: 5px;
+    height: 45vh;
+    padding-right: 70px;
+}
+.room-images{
+    position: relative;
+}
+
+.room-images .book-now{
+    background-color: #CDAB5499;
+    z-index: 1;
+    position: absolute;
+    width: 100%;
+    height: 98%;
+    text-align: center;
+    border: none;
+    opacity: 0;
+    transition:0.1s;
+
+}
+
+.room-images .book-now a{
+    text-decoration: none;
+    color: whitesmoke;
+    font-size: 3.5rem;
+
+}
+
+.room-images:hover .book-now{
+    opacity: 1;
+
+}  
